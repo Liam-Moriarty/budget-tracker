@@ -1,0 +1,45 @@
+.detailsWrapperIncome {
+  width: 100%;
+  height: 400px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--secondary);
+  color: var(--text);
+  border-bottom: 0.5rem solid rgb(13, 136, 13);
+}
+
+.detailsWrapperExpenses {
+  height: 400px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--secondary);
+  color: var(--text);
+  border-bottom: 0.5rem solid rgb(196, 16, 16);
+}
+
+.titleContainer {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.titleContainer h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: var(--accent);
+}
+
+.titleContainer p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 425px) {
+  .titleContainer h1 {
+    font-size: 1.1rem;
+  }
+
+  .titleContainer p {
+    font-size: 0.9rem;
+  }
+}

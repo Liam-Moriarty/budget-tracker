@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --text: #121212;
+  --primary: #121212;
+  --secondary: #bfbfbf;
+  --background: #e8e8e8;
+  --accent: #571e94;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+  width: 1440px;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1100px) {
+  .app {
+    padding: 1rem;
+  }
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .item1 {
+    order: 2;
+  }
+
+  .item2 {
+    order: 1;
+  }
+
+  .item3 {
+    order: 3;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .app {
+    padding: 0.5rem;
+  }
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Scrollbar Design with Compatibility to some browsers */
+/* Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 8px; /* Adjust width as needed */
+  background: var(--secondary); /* Dark background color */
+}
+
+/* Thumb */
+::-webkit-scrollbar-thumb {
+  background: var(--primary); /* Black thumb color */
+  border-radius: 6px; /* Add some rounding for aesthetics (optional) */
+}

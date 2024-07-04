@@ -1,0 +1,78 @@
+.form {
+  padding: 1.5rem 0;
+}
+
+.articleWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.selectWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--text);
+}
+
+.selectWrapper label {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.selectWrapper select,
+input {
+  outline: none;
+  padding: 0.5rem;
+  border: none;
+  background-color: transparent;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.selectWrapper input::placeholder {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.create {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border: none;
+  background-color: var(--primary);
+  --text: #e8e8e8;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.create:hover {
+  background-color: rgb(44, 44, 44);
+}
+
+/* Hide the default spin buttons */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"] {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media only screen and (max-width: 425px) {
+  .form {
+    padding: 0.5rem 0;
+  }
+  .articleWrapper {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+  .selectWrapper label {
+    font-size: 0.9rem;
+  }
+  .create {
+    padding: 0.4rem;
+    font-size: 0.8rem;
+  }
+}
